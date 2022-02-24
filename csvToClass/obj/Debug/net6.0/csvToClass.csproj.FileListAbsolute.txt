@@ -1,0 +1,15 @@
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.csproj.AssemblyReference.cache
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.GeneratedMSBuildEditorConfig.editorconfig
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.AssemblyInfoInputs.cache
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.AssemblyInfo.cs
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.csproj.CoreCompileInputs.cache
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\bin\Debug\net6.0\csvToClass.exe
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\bin\Debug\net6.0\csvToClass.deps.json
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\bin\Debug\net6.0\csvToClass.runtimeconfig.json
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\bin\Debug\net6.0\csvToClass.dll
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\bin\Debug\net6.0\csvToClass.pdb
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.dll
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\refint\csvToClass.dll
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.pdb
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.genruntimeconfig.cache
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\ref\csvToClass.dll
