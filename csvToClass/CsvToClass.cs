@@ -1,4 +1,7 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 using WespBasReportingDesktop.ExtensionMethods;
 
 namespace csvToClass;
@@ -21,7 +24,8 @@ public class CsvToClass
             try
             {
                 var classString = CsvToClass.CSharpClassCodeFromCsvFile(path);
-                File.WriteAllText($@"L:\WESP\Data\WESP\Selecties\CsModel\{fileName}.cs", classString);
+                File.WriteAllText($@"L:\WESP\Projects\csvToClass\csvToClass\csvToClass\WespDataModels\{fileName}.cs",
+                    classString);
                 Console.WriteLine(fileName);
             }
             catch
@@ -46,7 +50,11 @@ public class CsvToClass
         string className = Path.GetFileNameWithoutExtension(filePath);
         string classNameTitleCase = className.ToTitleCase();
         // use StringBuilder for better performance
-        string code = String.Format("using System; \n {0}public class {1} {{ \n", classAttribute, classNameTitleCase);
+
+        string code =
+            String.Format(
+                "using System; \n using WespBasReportingDesktop.Models; \n {0}public class {1} : IWespData {{ \n",
+                classAttribute, classNameTitleCase);
 
         for (int columnIndex = 0; columnIndex < columnNames.Length; columnIndex++)
         {

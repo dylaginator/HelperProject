@@ -8,6 +8,8 @@ L:\WESP\Projects\csvToClass\csvToClass\csvToClass\bin\Debug\net6.0\csvToClass.de
 L:\WESP\Projects\csvToClass\csvToClass\csvToClass\bin\Debug\net6.0\csvToClass.runtimeconfig.json
 L:\WESP\Projects\csvToClass\csvToClass\csvToClass\bin\Debug\net6.0\csvToClass.dll
 L:\WESP\Projects\csvToClass\csvToClass\csvToClass\bin\Debug\net6.0\csvToClass.pdb
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\bin\Debug\net6.0\CsvHelper.dll
+L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.csproj.CopyComplete
 L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.dll
 L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\refint\csvToClass.dll
 L:\WESP\Projects\csvToClass\csvToClass\csvToClass\obj\Debug\net6.0\csvToClass.pdb

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0ZH9TIs98OLT2DsxUY0Cvmvczk7f7i5JnLmG4/ZCEJ9sVfPodUUwadMNapuYOsPZ8RE4O2TghBAtXtBe5V74cw==",
+  "dgSpecHash": "YZREqRzuHlQtlE3txImR/0W4OaPDFjYGdOgdeuqBx+0OAVlNE1ojUL/McjCU0fWaiHdscT+zD6oSxG9a89mQDQ==",
   "success": true,
   "projectFilePath": "L:\\WESP\\Projects\\csvToClass\\csvToClass\\csvToClass\\csvToClass.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Adrian\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512"
+  ],
   "logs": []
 }

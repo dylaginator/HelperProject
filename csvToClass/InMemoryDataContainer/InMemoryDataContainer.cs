@@ -1,42 +1,30 @@
-﻿using System.IO;
+﻿using System.Globalization;
 using System.Reflection;
+using CsvHelper;
+using CsvHelper.Configuration;
 
 namespace WespBasReportingDesktop.Models;
 
 public partial class InMemoryDataContainer
 {
-    public static void HydrateProperty(/*IDictionary<string,T> obj, string filePath*/) 
+    public void ParseFile<T>(string fileName) where T : IWespData
     {
-       var fileRows = GetRowsFromFile(@"L:\WESP\Data\WESP\Selecties\Accu_Feitenblok_1.csv");
-       var fields = fileRows[0].Split('\t');
-       var newEntry = new AccuFeitenblok1();
-       var typeProps = typeof(AccuFeitenblok1).GetProperties();
-       foreach (var item in typeProps.Select(((info, i) => new {info,i})))
-       {
-           Console.WriteLine($"{item.info.Name} {fields[item.i]}");
-           item.info.SetValue(newEntry,fields[item.i]);
-       }
-       
-       return;
-    }
+        List<PropertyInfo>? propertiesList = typeof(InMemoryDataContainer).GetProperties().ToList();
+        string path = $@"L:\WESP\Data\WESP\Selecties\{fileName}.csv";
 
-
-    private static List<string> GetRowsFromFile(string filePath)
-    {
-        StreamReader streamReader = File.OpenText(filePath);
-        streamReader.ReadLine(); //skip the header
-
-        List<string> rows = new();
-
-        while (!streamReader.EndOfStream)
+        using (var reader = new StreamReader(path))
         {
-            string row = streamReader.ReadLine();
-            if (row is not null)
+            var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-                rows.Add(row);
+                Delimiter = "\t"
+            };
+
+            using (var csv = new CsvReader(reader, config))
+            {
+                var collection = csv.GetRecords<T>().ToList();
+                var prop = propertiesList.First(prop => prop.Name == fileName);
+                prop.SetValue(this, collection);
             }
         }
-
-        return rows;
     }
 }

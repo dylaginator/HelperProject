@@ -1,12 +1,14 @@
-public class DimKerntakenrp41
-{
-    public int site { get; set; }
+using System; 
+ using WespBasReportingDesktop.Models; 
+ public class DimKerntakenrp41 : IWespData { 
+	 public int site { get; set; }
 
-    public string DimKerntaakRp41Maand { get; set; }
+	 public string DimKerntaakRp41Maand { get; set; }
 
-    public int DimKerntaakRp41Maand_SortOrder { get; set; }
+	 public int DimKerntaakRp41Maand_SortOrder { get; set; }
 
-    public string KerntaakRp41_resultYtdLytd { get; set; }
+	 public string KerntaakRp41_resultYtdLytd { get; set; }
 
-    public double KerntaakRp41_resultYtdMarkt { get; set; }
+	 public double KerntaakRp41_resultYtdMarkt { get; set; }
+
 }
